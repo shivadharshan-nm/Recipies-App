@@ -1,7 +1,7 @@
 import express from 'express';
 import dotenv from 'dotenv';
 import { errorHandler } from './middlewares/errorMiddleware.js';
-import recipeRoutes from './routes/recipeRoutes.js';
+import recipeRoutes from './routes/receipeRoutes.js';
 import connectDB from './config/db.js';
 
 dotenv.config(); // Load environment variables
