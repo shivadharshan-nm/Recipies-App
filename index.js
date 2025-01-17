@@ -17,6 +17,11 @@ connectDB();
 // Routes
 app.use('/api/recipes', recipeRoutes);
 
+app.get('/', (req, res) => {
+    res.status(200).send('Welcome to RECIPE API')
+  })
+  
+
 // Error handling middleware
 app.use(errorHandler);
 
